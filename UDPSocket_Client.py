@@ -8,7 +8,7 @@ UDPSocket=socket(AF_INET,SOCK_DGRAM)
 
 while True:
     data=input('<<')
-    bin_data=data.decode()
+    bin_data=data.encode()
     if not data:
         break
     else:
