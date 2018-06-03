@@ -13,7 +13,7 @@ group=inet_aton(group_addr)
 mreq=pack("4sl",group,INADDR_ANY)
 sock.setsockopt(IPPROTO_IP,IP_ADD_MEMBERSHIP,mreq)
 
-bin_data,address=sock.ecvfrom(1024)
+bin_data,address=sock.recvfrom(1024)
 
 print("Recived message")
 
