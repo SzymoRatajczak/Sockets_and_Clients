@@ -1,6 +1,6 @@
 from asyncore import dispatcher
 from sys import argv
-from socket import AF_INET,SOCK_STREAM,socket
+from socket import AF_INET,SOCK_STREAM
 
 if(len(argv)<2):
     print("No data")
